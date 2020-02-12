@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Edoofun</string>
+    <string name="label_header_pilihan">Keahlian Apa Yang Anda Minati?</string>
 </resources>
