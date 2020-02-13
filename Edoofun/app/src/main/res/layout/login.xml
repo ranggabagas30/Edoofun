@@ -1,38 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-    <TextView
-        android:id="@+id/username_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/username"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="232dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/password_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/password"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="286dp"
-        tools:ignore="MissingConstraints" />
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
 
     <Button
-        android:id="@+id/btn_login"
-        android:layout_width="324dp"
-        android:layout_height="65dp"
+        android:id="@+id/btn_login1"
+        android:layout_width="309dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="40dp"
+        android:background="#F0A338"
         android:text="@string/login"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="358dp"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/username_txt"
+        app:layout_constraintEnd_toEndOf="@+id/username_txt"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="@+id/username_txt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/username_txt"
+        android:layout_width="348dp"
+        android:layout_height="285dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="171dp"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:text="@string/login"
+        app:layout_constraintBottom_toTopOf="@+id/username_txt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="174dp"
+        android:layout_height="70dp"
+        android:background="#FDBEB6B6"
+        android:text="@string/buat_akun"
+        app:layout_constraintBottom_toTopOf="@+id/username_txt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="203dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="151dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/ForgetPass_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lupa_kata_sandi"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <Button
+        android:id="@+id/btn_fb"
+        android:layout_width="297dp"
+        android:layout_height="61dp"
+        android:background="#3F51B5"
+        android:text="@string/login_with_facebook"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="567dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_mail"
+        android:layout_width="297dp"
+        android:layout_height="61dp"
+        android:background="#FFFFFF"
+        android:text="@string/login_with_g_mail"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="637dp"
         tools:ignore="MissingConstraints" />
 
 
