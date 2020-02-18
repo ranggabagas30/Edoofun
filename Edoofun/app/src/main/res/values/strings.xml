@@ -2,4 +2,16 @@
     <string name="app_name">Edoofun</string>
     <string name="button">Button</string>
     <string name="buat_akun">Buat Akun</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login_with_g_mail">LOGIN WITH G-MAIL</string>
+    <string name="buat_akun">Buat Akun</string>
+    <string name="lupa_kata_sandi">Lupa Kata Sandi?</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="todo">TODO</string>
 </resources>
