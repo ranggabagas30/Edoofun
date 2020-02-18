@@ -3,4 +3,6 @@
     <string name="label_header_pilihan">Keahlian Apa Yang Anda Minati?</string>
     <string name="label_desc_1">Pilih 1 atau lebih untuk membuat</string>
     <string name="label_desc_2">rekomendasi keahlian sesuai dengan pilihanmu</string>
+    <string name="meat">Meat</string>
+    <string name="cheese">Cheese</string>
 </resources>
