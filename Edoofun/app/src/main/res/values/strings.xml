@@ -11,21 +11,14 @@
     <string name="login_with_facebook">Login with Facebook</string>
     <string name="kata_sandi">Kata Sandi</string>
     <string name="nama_pengguna">Nama Pengguna</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
-    <string name="todo">TODO</string>
     <string name="label_header_pilihan">Keahlian Apa Yang Anda Minati?</string>
     <string name="label_desc_1">Pilih 1 atau lebih untuk membuat</string>
     <string name="label_desc_2">rekomendasi keahlian sesuai dengan pilihanmu</string>
-    <string name="minat_jaipong">minat_jaipong</string>
+    <string name="minat_jaipong">Jaipong</string>
     <string name="tari_jaipong">Tari Jaipong</string>
     <string name="tari">tari</string>
     <string name="memancing">Memancing</string>
-    <string name="memancing">Memancing</string>
     <string name="bersepeda">Bersepeda</string>
-    <string name="bersepeda">Bersepeda</string>
-    <string name="menjahit">Menjahit</string>
-    <string name="memasak">Memasak</string>
     <string name="memanah">Memanah</string>
     <string name="menjahit">Menjahit</string>
     <string name="piano">Piano</string>
@@ -33,8 +26,6 @@
     <string name="diving">Diving</string>
     <string name="menyanyi">Menyanyi</string>
     <string name="memasak">Memasak</string>
-    <string name="diving">Diving</string>
-    <string name="menyanyi">Menyanyi</string>
     <string name="gitar">Gitar</string>
     <string name="bermain_piano">Bermain Piano</string>
     <string name="basket">Basket</string>
@@ -43,8 +34,6 @@
     <string name="tendang">tendang</string>
     <string name="pencak_silat">Pencak Silat</string>
     <string name="bola_tendang">Bola Tendang</string>
-    <string name="memanah">Memanah</string>
-    <string name="baseball">Baseball</string>
     <string name="baseball">Baseball</string>
     <string name="enter_arrow">enter_arrow</string>
 </resources>
