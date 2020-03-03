@@ -5,7 +5,11 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class MainActivity extends AppCompatActivity {
+
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         toolbar.setLogo(R.drawable.ic_dehaze);
+
+        bottomNavigationView = findViewById(R.id.btn_nav);
 
     }
 }
