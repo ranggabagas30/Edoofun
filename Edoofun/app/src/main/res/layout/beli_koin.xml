@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -18,7 +19,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="EDOOFUN" />
+            android:text="EDOOFUN"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -33,7 +37,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginRight="24dp"
         app:cardCornerRadius="8sp"
-        android:outlineSpotShadowColor="@color/colorPrimary">
+        >
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -45,8 +49,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/koin"
-                android:padding="15sp"
-                android:layout_gravity=""/>
+                android:padding="10sp"
+                android:layout_marginTop="5sp"
+                android:foregroundGravity="center"/>
 
 
             <TextView
@@ -54,8 +59,9 @@
                 android:text="000-"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textSize="30sp"
+                android:textSize="28sp"
                 android:layout_marginTop="11sp"
+                android:layout_marginEnd="5sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
@@ -98,7 +104,7 @@
                 android:gravity="center"
                 android:layout_marginTop="20sp"
                 android:textStyle="bold"
-                android:textSize="16sp"/>
+                android:textSize="20sp"/>
 
 
 
