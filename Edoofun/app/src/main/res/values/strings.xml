@@ -35,4 +35,10 @@
     <string name="memanah">Memanah</string>
     <string name="baseball">Baseball</string>
     <string name="enter_arrow">enter_arrow</string>
+
+    <string name="notification">Notification</string>
+    <string name="sosial">Sosial</string>
+    <string name="shop">Shop</string>
+    <string name="home">Home</string>
+    <string name="akun">Akun</string>
 </resources>

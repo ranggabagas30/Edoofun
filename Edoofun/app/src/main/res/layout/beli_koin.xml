@@ -63,7 +63,8 @@
                 android:layout_marginTop="11sp"
                 android:layout_marginEnd="5sp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5sp" />
 
         </LinearLayout>
 
@@ -87,25 +88,31 @@
         android:layout_alignParentRight="true">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2sp"
+            android:orientation="horizontal"
+            android:layout_marginRight="2sp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/history"
-                android:padding="8sp"/>
+                android:layout_marginStart="7sp"
+                android:layout_marginLeft="5sp"
+                android:padding="8sp"
+                android:src="@drawable/history" />
 
             <TextView
                 android:id="@id/history"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Riwayat Pembelian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/history"
+                android:layout_marginStart="2sp"
+                android:layout_marginLeft="6sp"
                 android:gravity="center"
-                android:layout_marginTop="20sp"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
-
+                android:text="Riwayat Pembelian"
+                android:textSize="17sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -231,11 +238,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        app:itemTextColor="#262626"
         app:menu="@menu/main_menu" />
-
-
-
 
 </RelativeLayout>
