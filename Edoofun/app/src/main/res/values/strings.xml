@@ -43,4 +43,11 @@
     <string name="akun">Akun</string>
     <string name="lihat_semua">Lihat semua</string>
     <string name="kategori">Kategori</string>
+    <string name="ic_nyanyi">Nyanyi</string>
+    <string name="ic_basket">Basket</string>
+    <string name="ic_memasak">Memasak</string>
+    <string name="ic_blowling">Blowling</string>
+    <string name="ic_rafting">Rafting</string>
+    <string name="ic_snorking">Snorking</string>
+    <string name="title_toolbar">EDOOFUN</string>
 </resources>
