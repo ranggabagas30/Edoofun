@@ -41,4 +41,6 @@
     <string name="shop">Shop</string>
     <string name="home">Home</string>
     <string name="akun">Akun</string>
+    <string name="lihat_semua">Lihat semua</string>
+    <string name="kategori">Kategori</string>
 </resources>

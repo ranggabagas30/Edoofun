@@ -89,6 +89,64 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/titlekategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/kategori"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview" />
+
+    <TextView
+        android:id="@+id/titlelihatsemua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="-84dp"
+        android:layout_marginLeft="-84dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="333dp"
+        android:layout_toEndOf="@+id/kategori"
+        android:layout_toRightOf="@+id/kategori"
+        android:gravity="right"
+        android:text="@string/lihat_semua"
+        android:textColor="#00c3ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/kategori"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kategori"
+        app:layout_constraintTop_toBottomOf="@+id/cardview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/kategori1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/titlekategori"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="2sp"
+        android:background="@drawable/border"
+        android:drawableLeft="@drawable/ic_nyanyi"
+        android:drawablePadding="1dp"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="@string/ic_nyanyi"
+        app:layout_constraintEnd_toStartOf="@+id/kategori2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="257dp" />
+
 
 
 
