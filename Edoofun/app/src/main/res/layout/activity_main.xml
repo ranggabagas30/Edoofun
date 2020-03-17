@@ -1,18 +1,293 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#00c3ff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title_toolbar"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="387dp"
+        android:layout_height="141dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="24dp"
+        app:cardCornerRadius="8sp"
+        app:cardElevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_community" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Community" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_lomba" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Event" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+-----------------------------------------------------------------------------------
+    <TextView
+        android:id="@+id/titlekategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/kategori"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview" />
+
+    <TextView
+        android:id="@+id/titlelihatsemua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardview"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="-84dp"
+        android:layout_marginLeft="-84dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="333dp"
+        android:layout_toEndOf="@+id/titlekategori"
+        android:layout_toRightOf="@+id/titlekategori"
+        android:gravity="right"
+        android:text="@string/lihat_semua"
+        android:textColor="#00c3ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/titlekategori"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titlekategori"
+        app:layout_constraintTop_toBottomOf="@+id/cardview"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/kategori1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/titlekategori"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="2sp"
+        android:background="@drawable/border_kategori"
+        android:drawableLeft="@drawable/ic_nyanyi"
+        android:drawablePadding="1dp"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="@string/ic_nyanyi"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <TextView
+        android:id="@+id/kategori2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/titlekategori"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toStartOf="@+id/kategori3"
+        android:layout_toLeftOf="@+id/kategori3"
+        android:layout_toEndOf="@+id/kategori1"
+        android:layout_toRightOf="@+id/kategori1"
+        android:background="@drawable/border_kategori"
+        android:drawableLeft="@drawable/ic_basket"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="@string/ic_basket"
+        app:layout_constraintEnd_toStartOf="@+id/kategori3"
+        app:layout_constraintStart_toEndOf="@+id/kategori1"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <TextView
+
+        android:id="@+id/kategori3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/titlekategori"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/border_kategori"
+        android:drawableLeft="@drawable/ic_cooking"
+        android:gravity="center"
+        android:padding="5sp"
+        android:text="@string/ic_memasak"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="257dp" />
+
+
+    <TextView
+        android:id="@+id/ketegori4"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/kategori1"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/border_kategori"
+        android:drawableLeft="@drawable/ic_bowling"
+        android:gravity="center"
+        android:text="@string/ic_blowling" />
+
+    <TextView
+        android:id="@+id/kategori5"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/kategori2"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_toStartOf="@+id/kategori6"
+        android:layout_toLeftOf="@+id/kategori6"
+        android:layout_toEndOf="@+id/kategori1"
+        android:layout_toRightOf="@+id/kategori1"
+        android:background="@drawable/border_kategori"
+        android:drawableLeft="@drawable/ic_rafting"
+        android:gravity="center"
+        android:text="@string/ic_rafting" />
+
+    <TextView
+        android:id="@+id/kategori6"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/kategori1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="15sp"
+        android:background="@drawable/border_kategori"
+        android:drawableLeft="@drawable/ic_snorking"
+        android:gravity="center"
+        android:text="@string/ic_snorking" />
+
+-----------------------------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/minat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ketegori4"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="0sp"
+        android:layout_marginTop="10sp"
+        android:text="Berdasarkan minat kamu"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_nav"
+        android:paddingLeft="50dp"
+        android:paddingEnd="50dp"
+        android:layout_below="@+id/minat"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="4dp"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never"
+        android:paddingRight="50dp">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+
+-----------------------------------------------------------------------------------
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btn_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/main_menu" />
+
+</RelativeLayout>

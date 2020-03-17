@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Edoofun</string>
     <string name="button">Button</string>
-    <string name="buat_akun">Buat Akun</string>
     <string name="login">Login</string>
     <string name="username">username</string>
     <string name="password">password</string>
@@ -14,18 +13,17 @@
     <string name="label_header_pilihan">Keahlian Apa Yang Anda Minati?</string>
     <string name="label_desc_1">Pilih 1 atau lebih untuk membuat</string>
     <string name="label_desc_2">rekomendasi keahlian sesuai dengan pilihanmu</string>
-    <string name="minat_jaipong">Jaipong</string>
+    <string name="minat_jaipong">minat_jaipong</string>
     <string name="tari_jaipong">Tari Jaipong</string>
     <string name="tari">tari</string>
     <string name="memancing">Memancing</string>
     <string name="bersepeda">Bersepeda</string>
-    <string name="memanah">Memanah</string>
     <string name="menjahit">Menjahit</string>
     <string name="piano">Piano</string>
     <string name="bermain_gitar">Bermain Gitar</string>
+    <string name="memasak">Memasak</string>
     <string name="diving">Diving</string>
     <string name="menyanyi">Menyanyi</string>
-    <string name="memasak">Memasak</string>
     <string name="gitar">Gitar</string>
     <string name="bermain_piano">Bermain Piano</string>
     <string name="basket">Basket</string>
@@ -34,6 +32,22 @@
     <string name="tendang">tendang</string>
     <string name="pencak_silat">Pencak Silat</string>
     <string name="bola_tendang">Bola Tendang</string>
+    <string name="memanah">Memanah</string>
     <string name="baseball">Baseball</string>
     <string name="enter_arrow">enter_arrow</string>
+
+    <string name="notification">Notification</string>
+    <string name="sosial">Sosial</string>
+    <string name="shop">Shop</string>
+    <string name="home">Home</string>
+    <string name="akun">Akun</string>
+    <string name="lihat_semua">Lihat semua</string>
+    <string name="kategori">Kategori</string>
+    <string name="ic_nyanyi">Nyanyi</string>
+    <string name="ic_basket">Basket</string>
+    <string name="ic_memasak">Memasak</string>
+    <string name="ic_blowling">Blowling</string>
+    <string name="ic_rafting">Rafting</string>
+    <string name="ic_snorking">Snorking</string>
+    <string name="title_toolbar">EDOOFUN</string>
 </resources>
