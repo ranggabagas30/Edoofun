@@ -36,6 +36,9 @@
     <string name="baseball">Baseball</string>
     <string name="enter_arrow">enter_arrow</string>
 
+    <string name="email">Email</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="tulisulang">Tulis Ulang Password</string>
     <string name="notification">Notification</string>
     <string name="sosial">Sosial</string>
     <string name="shop">Shop</string>
