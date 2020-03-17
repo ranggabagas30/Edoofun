@@ -5,8 +5,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
 import android.animation.ArgbEvaluator;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -76,5 +78,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void LuncurkanSosial(View view) {
+        startActivity(new Intent(MainActivity.this, sosial.class));
 
     }
+
+    public void LuncurkanMinat(View view) {
+        startActivity(new Intent(MainActivity.this, pilihan_minat.class));
+
+    }
+}

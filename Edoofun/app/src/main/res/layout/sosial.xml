@@ -85,65 +85,13 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         app:srcCompat="@mipmap/btn_dm_foreground" />
 
-    <ImageButton
-        android:id="@+id/btn_cart"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="12dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_love"
-        app:srcCompat="@mipmap/btn_cart" />
 
-    <ImageButton
-        android:id="@+id/btn_home"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginBottom="12dp"
-        android:scaleType="centerCrop"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btn_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_cart"
-        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/btn_home" />
-
-    <ImageButton
-        android:id="@+id/btn_love"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="12dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_notif"
-        app:srcCompat="@mipmap/btn_love" />
-
-    <ImageButton
-        android:id="@+id/btn_notif"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="12dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_profile"
-        app:srcCompat="@mipmap/btn_notif" />
-
-    <ImageButton
-        android:id="@+id/btn_profile"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginBottom="12dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@mipmap/btn_profile" />
+        app:menu="@menu/main_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

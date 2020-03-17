@@ -28,6 +28,8 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+    -----------------------------------------------------------------------------------
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
         android:layout_width="387dp"
@@ -35,7 +37,7 @@
         android:layout_below="@+id/toolbar"
         android:layout_marginStart="15dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="15dp"
         android:layout_marginRight="24dp"
         app:cardCornerRadius="8sp"
@@ -87,8 +89,52 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="175dp"
+            android:layout_marginLeft="140dp"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:onClick="LuncurkanMinat"
+                android:text="Minat"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Minat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="255dp"
+            android:layout_marginLeft="140dp"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:onClick="LuncurkanSosial"
+                android:text="Sosial"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sosial" />
+
+        </LinearLayout>
+
     </androidx.cardview.widget.CardView>
------------------------------------------------------------------------------------
+
     <TextView
         android:id="@+id/titlekategori"
         android:layout_width="wrap_content"
