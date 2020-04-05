@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HalamanHome extends AppCompatActivity {
+    TextView lihatsemua;
 
     ViewPager viewPager;
     AdapterViewPager adapterViewPager;
@@ -98,6 +100,17 @@ public class HalamanHome extends AppCompatActivity {
 
                 }
 
+        });
+
+
+
+       lihatsemua = findViewById(R.id.titlelihatsemua);
+       lihatsemua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HalamanHome.this, KategoriDetail.class);
+                startActivity(i);
+            }
         });
         }
 

@@ -31,6 +31,8 @@
 
         <activity android:name=".PembayaranKoin"/>
 
+        <activity android:name=".KategoriDetail"/>
+
         <activity android:name=".HalamanHome"/>
     </application>
 
