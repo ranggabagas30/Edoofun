@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -17,74 +18,43 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
-    ViewPager viewPager;
-    AdapterViewPager adapterViewPager;
-    List<Model> models;
-    Integer[] colors = null;
-    ArgbEvaluator argbEvaluator = new ArgbEvaluator();
+    TextView forgetpass;
+    Button btnregister1,btnlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        toolbar.setLogo(R.drawable.ic_dehaze);
-
-        models = new ArrayList<>();
-        models.add(new Model(R.drawable.cardswipe1, "", ""));
-        models.add(new Model(R.drawable.cardswipe2, "BERENANG MEMPELAJARI DUNIA LAUT", "-"));
-
-        adapterViewPager = new AdapterViewPager(models, this);
-
-        viewPager = findViewById(R.id.viewpager);
-        viewPager.setAdapter(adapterViewPager);
-        viewPager.setPadding(0,0,0,0);
-
-        Integer[] colors_temp = {
-                getResources().getColor(R.color.color1)};
-
-        colors = colors_temp;
-
-        viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        forgetpass = findViewById(R.id.ForgetPass_txt);
+        forgetpass.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                if (position < (adapterViewPager.getCount() -1)&& position < (colors.length -1)){
-                    viewPager.setBackgroundColor(
-
-                            (Integer) argbEvaluator.evaluate(
-                                    positionOffset,
-                                    colors[position],
-                                    colors[position +1]
-                            )
-                    );
-                }else {
-                    viewPager.setBackgroundColor(colors[colors.length -1]);
-                }
-            }
-
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ForgotPass.class);
+                startActivity(i);
             }
         });
-    }
 
 
-    public void LuncurkanSosial(View view) {
-        startActivity(new Intent(MainActivity.this, sosial.class));
+        btnregister1 = findViewById(R.id.btnregister);
+        btnregister1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this, Register.class);
+                startActivity(a);
+            }
 
-    }
 
-    public void LuncurkanMinat(View view) {
-        startActivity(new Intent(MainActivity.this, pilihan_minat.class));
+        });
+
+        btnlogin = findViewById(R.id.btn_login1);
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent c = new Intent(MainActivity.this, HalamanHome.class);
+                startActivity(c);
+            }
+        });
 
     }
 }

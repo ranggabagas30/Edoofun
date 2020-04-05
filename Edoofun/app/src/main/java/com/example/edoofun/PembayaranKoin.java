@@ -9,16 +9,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class sosial  extends AppCompatActivity {
-
+public class PembayaranKoin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.sosial);
+        setContentView(R.layout.beli_koin);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.btn_nav);
 
-        bottomNavigationView.setSelectedItemId(R.id.sosial_menu);
+        bottomNavigationView.setSelectedItemId(R.id.keranjang_menu);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -32,12 +31,12 @@ public class sosial  extends AppCompatActivity {
                         return true;
 
                     case R.id.keranjang_menu:
-                        startActivity(new Intent(getApplicationContext(),
-                                PembayaranKoin.class));
-                        overridePendingTransition(0, 0);
                         return true;
 
                     case R.id.sosial_menu:
+                        startActivity(new Intent(getApplicationContext(),
+                                sosial.class));
+                        overridePendingTransition(0, 0);
                         return true;
 
                 }
@@ -47,4 +46,6 @@ public class sosial  extends AppCompatActivity {
 
         });
     }
-    }
+
+}
+

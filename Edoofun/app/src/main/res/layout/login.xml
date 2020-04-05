@@ -19,8 +19,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/username_txt"
         app:layout_constraintEnd_toEndOf="@+id/username_txt"
         app:layout_constraintHorizontal_bias="0.458"
-        app:layout_constraintStart_toStartOf="@+id/username_txt"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="@+id/username_txt" />
 
     <TextView
         android:id="@+id/username_txt"
@@ -28,6 +27,8 @@
         android:layout_height="285dp"
         android:background="#FFFFFF"
         android:layout_marginTop="170sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_fb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -40,19 +41,18 @@
         android:layout_width="171dp"
         android:layout_height="70dp"
         android:layout_marginTop="180sp"
-        android:background="#FFFFFF"
+        android:background="#FF808080"
         android:text="@string/login"
         app:layout_constraintBottom_toTopOf="@+id/username_txt"
         app:layout_constraintStart_toStartOf="@+id/username_txt"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnregister"
         android:layout_width="178dp"
         android:layout_height="70dp"
-        android:layout_marginTop="15dp"
-        android:background="#FDBEB6B6"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/bg_button"
         android:text="@string/buat_akun"
         app:layout_constraintBottom_toTopOf="@+id/username_txt"
         app:layout_constraintEnd_toEndOf="@+id/username_txt"
@@ -61,8 +61,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="151dp"
-        android:layout_height="150dp"
+        android:layout_width="149dp"
+        android:layout_height="156dp"
         android:layout_marginTop="24dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +79,8 @@
         app:layout_constraintEnd_toEndOf="@+id/username_txt"
         app:layout_constraintStart_toStartOf="@+id/username_txt"
         app:layout_constraintTop_toBottomOf="@+id/btn_login1"
-        tools:ignore="MissingConstraints" />
+        android:clickable="true"
+        android:onClick="perform_action"/>
 
     <Button
         android:id="@+id/btn_fb"
@@ -92,7 +93,7 @@
         android:paddingLeft="@android:dimen/app_icon_size"
         android:text="@string/login_with_facebook"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="520sp"
+        android:layout_marginTop="470sp"
         android:textIsSelectable="false"
         app:layout_constraintBottom_toTopOf="@+id/btn_mail"
         app:layout_constraintEnd_toEndOf="parent"
@@ -104,17 +105,18 @@
         android:id="@+id/btn_mail"
         android:layout_width="301dp"
         android:layout_height="57dp"
+        android:layout_below="@+id/btn_fb"
         android:background="#FFFFFF"
         android:drawableLeft="@drawable/gmail"
         android:paddingLeft="@android:dimen/app_icon_size"
         android:text="@string/login_with_g_mail"
         android:textColor="#000000"
-        android:layout_below="@+id/btn_fb"
+        android:layout_marginTop="550sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:layout_marginBottom="50sp"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/user_txt"
