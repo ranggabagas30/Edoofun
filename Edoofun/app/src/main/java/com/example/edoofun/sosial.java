@@ -58,4 +58,10 @@ public class sosial  extends AppCompatActivity {
         Intent intent = new Intent(this, postingan_baru.class);
         startActivity(intent);
     }
+
+    public void LaunchPostDetail(View view) {
+        Intent intent = new Intent(this, postingan_detail.class);
+        startActivity(intent);
+
+    }
 }
