@@ -3,6 +3,7 @@ package com.example.edoofun;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -47,4 +48,14 @@ public class sosial  extends AppCompatActivity {
 
         });
     }
+
+    public void LaunchDM(View view) {
+        Intent intent = new Intent(this, inbox.class);
+        startActivity(intent);
     }
+
+    public void LaunchPostBaru(View view) {
+        Intent intent = new Intent(this, postingan_baru.class);
+        startActivity(intent);
+    }
+}

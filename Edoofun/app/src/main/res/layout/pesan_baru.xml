@@ -38,6 +38,7 @@
         android:layout_marginLeft="96dp"
         android:layout_marginTop="220dp"
         android:text="Richard Matterson"
+        android:onClick="LaunchIsiDM"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
