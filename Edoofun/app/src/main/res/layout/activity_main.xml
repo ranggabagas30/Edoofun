@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -29,6 +30,7 @@
     </androidx.appcompat.widget.Toolbar>
 
     -----------------------------------------------------------------------------------
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
@@ -100,7 +102,6 @@
             <Button
                 android:layout_width="70dp"
                 android:layout_height="60dp"
-                android:onClick="LuncurkanMinat"
                 android:text="Minat"/>
 
             <TextView
@@ -114,13 +115,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="255dp"
-            android:layout_marginLeft="140dp"
+            android:layout_marginStart="259sp"
             android:orientation="vertical"
-            android:padding="10sp">
+            android:padding="10sp"
+            android:layout_marginLeft="259sp">
 
             <Button
-                android:layout_width="80dp"
+                android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:onClick="LuncurkanSosial"
                 android:text="Sosial"/>
@@ -160,6 +161,8 @@
         android:layout_marginLeft="-84dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="15dp"
+        android:clickable="true"
+
         android:layout_marginRight="333dp"
         android:layout_toEndOf="@+id/titlekategori"
         android:layout_toRightOf="@+id/titlekategori"

@@ -46,6 +46,7 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="12dp"
         android:scaleType="centerCrop"
+        android:onClick="LaunchPostBaru"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_menu"
         app:srcCompat="@mipmap/btn_camera_round" />
@@ -80,6 +81,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="66dp"
         android:scaleType="centerCrop"
+        android:onClick="LaunchDM"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txt_cari"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
@@ -94,4 +96,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/main_menu" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="154dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="168dp"
+        android:scaleType="fitCenter"
+        android:onClick="LaunchPostDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/tari_jaipong_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>

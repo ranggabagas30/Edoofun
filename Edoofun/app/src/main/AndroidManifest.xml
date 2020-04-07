@@ -24,6 +24,36 @@
             android:name=".sosial"
             android:label="@string/app_name">
         </activity>
+        <activity
+            android:name=".inbox"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".pesan_baru"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".isi_pesan"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".postingan_baru"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".postingan_detail"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity android:name=".ForgotPass"/>
+
+        <activity android:name=".Register"/>
+
+        <activity android:name=".PembayaranKoin"/>
+
+        <activity android:name=".KategoriDetail"/>
+
+        <activity android:name=".HalamanHome"/>
     </application>
 
 </manifest>
