@@ -53,4 +53,15 @@
     <string name="ic_rafting">Rafting</string>
     <string name="ic_snorking">Snorking</string>
     <string name="title_toolbar">EDOOFUN</string>
+    <string name="judul_kursus">Judul Kursus</string>
+
+
+    <string name="title_home">HOME</string>
+    <string name="title_pembelian">PEMBELIAN</string>
+    <string name="title_sosial">SOSIAL</string>
+    <string name="title_notifikasi">NOTIFIKASI</string>
+    <string name="title_akun">AKUN</string>
+    <string name="logo">logo</string>
+
+
 </resources>
