@@ -7,26 +7,28 @@
     android:layout_height="match_parent"
     android:id="@+id/linearLayout3">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="384dp"
-        android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rectangle"
-        tools:layout_conversion_absoluteHeight="67dp"
-        tools:layout_conversion_absoluteWidth="411dp"
-        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40BDDC"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="405dp"
-        android:layout_height="146dp"
+        android:layout_width="406dp"
+        android:layout_height="151dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"
         app:srcCompat="@drawable/mancing"
         tools:layout_conversion_absoluteHeight="160dp"
-        tools:layout_conversion_absoluteWidth="411dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="67dp" />
+        tools:layout_conversion_absoluteWidth="411dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -35,22 +37,27 @@
         android:text="Komunitas Memancing"
         android:textAlignment="center"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.085"
         tools:layout_conversion_absoluteHeight="41dp"
-        tools:layout_conversion_absoluteWidth="411dp"
-        tools:layout_editor_absoluteY="227dp" />
-
+        tools:layout_conversion_absoluteWidth="411dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="160dp"
         android:layout_height="46dp"
         android:text="Announcement"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="63dp"
-        tools:layout_conversion_absoluteWidth="190dp"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="315dp" />
+        tools:layout_conversion_absoluteWidth="190dp" />
 
     <Button
         android:id="@+id/button2"
@@ -58,9 +65,11 @@
         android:layout_height="48dp"
         android:text="Photos"
         app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_conversion_absoluteHeight="58dp"
-        tools:layout_conversion_absoluteWidth="190dp"
-        tools:layout_editor_absoluteX="222dp" />
+        tools:layout_conversion_absoluteWidth="190dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -69,20 +78,26 @@
         android:text="Tools"
         android:textAlignment="center"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_conversion_absoluteHeight="41dp"
-        tools:layout_conversion_absoluteWidth="411dp"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="410dp" />
+        tools:layout_conversion_absoluteWidth="411dp" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="87dp"
         android:layout_height="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.754"
         app:srcCompat="@drawable/leave"
         tools:layout_conversion_absoluteHeight="92dp"
-        tools:layout_conversion_absoluteWidth="178dp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="499dp" />
+        tools:layout_conversion_absoluteWidth="178dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -91,30 +106,42 @@
         android:text="Leave Group"
         android:textAlignment="center"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855"
         tools:layout_conversion_absoluteHeight="32dp"
-        tools:layout_conversion_absoluteWidth="178dp"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="598dp" />
+        tools:layout_conversion_absoluteWidth="178dp" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="99dp"
         android:layout_height="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752"
         app:srcCompat="@drawable/share"
         tools:layout_conversion_absoluteHeight="90dp"
-        tools:layout_conversion_absoluteWidth="181dp"
-        tools:layout_editor_absoluteX="251dp"
-        tools:layout_editor_absoluteY="493dp" />
+        tools:layout_conversion_absoluteWidth="181dp" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="58dp"
+        android:layout_height="30dp"
         android:text="Share"
         android:textAlignment="center"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853"
         tools:layout_conversion_absoluteHeight="32dp"
-        tools:layout_conversion_absoluteWidth="174dp"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="598dp" />
+        tools:layout_conversion_absoluteWidth="174dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
