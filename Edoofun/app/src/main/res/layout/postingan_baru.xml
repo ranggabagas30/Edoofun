@@ -43,8 +43,8 @@
 
     <EditText
         android:id="@+id/editText_keterangan"
-        android:layout_width="203dp"
-        android:layout_height="45dp"
+        android:layout_width="224dp"
+        android:layout_height="54dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="76dp"
@@ -55,55 +55,34 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_tanda"
-        android:layout_width="148dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="144dp"
-        android:background="#00FFFFFF"
-        android:text="Tandai Orang"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_lokasi"
-        android:layout_width="148dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:background="#00FFFFFF"
-        android:text="Tambahkan Lokasi"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_tanda" />
-
-    <Button
-        android:id="@+id/btn_bagikan"
+        android:id="@+id/buttonUpload"
         android:layout_width="112dp"
         android:layout_height="46dp"
-        android:layout_marginTop="272dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
         android:background="#00FFFFFF"
+        android:onClick="upload"
         android:text="Bagikan"
         android:textColor="#A38AC5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/buttonChoose"
         android:layout_width="76dp"
         android:layout_height="72dp"
-        android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="#00FFFFFF"
+        android:onClick="click_img"
         android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108"
         app:srcCompat="@drawable/ic_upload" />
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btn_nav"
@@ -113,4 +92,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/main_menu" />
+
+    <ImageView
+        android:id="@+id/image_upload"
+        android:layout_width="477dp"
+        android:layout_height="283dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

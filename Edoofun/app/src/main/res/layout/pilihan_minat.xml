@@ -338,6 +338,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_enter_arrow"
+        android:onClick="Enter"
         android:contentDescription="@string/enter_arrow" />
 
 

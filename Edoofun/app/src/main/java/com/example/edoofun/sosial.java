@@ -64,4 +64,9 @@ public class sosial  extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void LaunchMinat(View view) {
+        Intent intent = new Intent(this, pilihan_minat.class);
+        startActivity(intent);
+    }
 }
