@@ -34,14 +34,9 @@
                 android:visibility="visible"
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:layout_height="146dp"
-                app:srcCompat="@drawable/mancing" />
-
-<!--            <com.facebook.drawee.view.SimpleDraweeView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                app:actualImageScaleType="centerInside"-->
-<!--                android:background="@drawable/mancing"/>-->
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_memancing_foreground" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -53,11 +48,11 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
-                android:layout_height="146dp"
-                app:srcCompat="@drawable/sepeda" />
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_bersepeda_foreground" />
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Komunitas Menyanyi"
@@ -66,11 +61,11 @@
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/nyanyi" />
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_menyanyi_foreground" />
 
             <TextView
-                android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Komunitas Gitar Lovers"
@@ -80,7 +75,47 @@
                 android:id="@+id/imageView6"
                 android:layout_width="match_parent"
                 android:layout_height="152dp"
-                app:srcCompat="@drawable/gitar" />
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_gitar_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Jaipong"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/img_jaipong"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_menjahit_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Diving"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/img_diving"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_diving_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Memasak"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/img_memasak"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_memasak_foreground" />
 
         </LinearLayout>
     </ScrollView>

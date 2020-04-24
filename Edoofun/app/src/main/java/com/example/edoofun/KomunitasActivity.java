@@ -23,13 +23,42 @@ public class KomunitasActivity extends AppCompatActivity {
         imageView27.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                toGrup();
+                toMancing();
             }
         });
+
+        ImageView imageView4 = (ImageView) findViewById(R.id.imageView4);
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toBersepeda();
+            }
+        });
+
+        ImageView imageView5 = (ImageView) findViewById(R.id.imageView5);
+        imageView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toMenyanyi();
+            }
+        });
+
+
+
     }
 
-    public void toGrup() {
+    public void toMancing() {
         Intent intent = new Intent(this, GrupmancingActivity.class);
+        startActivity(intent);
+    }
+
+    public void toBersepeda() {
+        Intent intent = new Intent(this, GrupbersepedaActivity.class);
+        startActivity(intent);
+    }
+
+    public void toMenyanyi() {
+        Intent intent = new Intent(this, KomunitasMenyanyiActivity.class);
         startActivity(intent);
     }
 

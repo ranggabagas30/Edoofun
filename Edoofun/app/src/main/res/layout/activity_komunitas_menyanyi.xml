@@ -29,13 +29,13 @@
                 android:id="@+id/imageView11"
                 android:layout_width="match_parent"
                 android:layout_height="147dp"
-                app:srcCompat="@drawable/mancing" />
+                app:srcCompat="@drawable/nyanyi" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Komunitas Memancing"
+                android:text="Komunitas Menyanyi"
                 android:layout_gravity="center"
                 android:textSize="30sp"/>
 
