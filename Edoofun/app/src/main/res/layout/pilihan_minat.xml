@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_header_pilihan"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_desc_1"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_desc_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_header" />
+
+    <TextView
+        android:id="@+id/label_desc_2"
+        android:layout_width="306dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/label_desc_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_desc_1" />
+
+    <CheckBox
+        android:id="@+id/cb_jaipong"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/minat_jaipong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_jaipong" />
+
+    <ImageView
+        android:id="@+id/img_jaipong"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/tari"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_desc_2"
+        app:srcCompat="@mipmap/minat_jaipong" />
+
+    <ImageView
+        android:id="@+id/img_memancing"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/memancing"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/cb_jaipong"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_desc_2"
+        app:srcCompat="@mipmap/minat_memancing" />
+
+    <CheckBox
+        android:id="@+id/cb_memancing"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:text="@string/memancing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_memancing" />
+
+    <ImageView
+        android:id="@+id/img_bersepeda"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/bersepeda"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_memancing"
+        app:srcCompat="@mipmap/minat_bersepeda" />
+
+    <CheckBox
+        android:id="@+id/cb_bersepeda"
+        android:layout_width="179dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:text="@string/bersepeda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_bersepeda" />
+
+    <ImageView
+        android:id="@+id/img_menjahit"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/menjahit"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_jaipong"
+        app:srcCompat="@mipmap/minat_menjahit" />
+
+    <CheckBox
+        android:id="@+id/cb_menjahit"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/menjahit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_menjahit" />
+
+    <ImageView
+        android:id="@+id/img_diving"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/diving"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_bersepeda"
+        app:srcCompat="@mipmap/minat_diving" />
+
+    <CheckBox
+        android:id="@+id/cb_diving"
+        android:layout_width="174dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:text="@string/diving"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_diving" />
+
+    <ImageView
+        android:id="@+id/img_memasak"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/memasak"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_menjahit"
+        app:srcCompat="@mipmap/minat_memasak" />
+
+    <CheckBox
+        android:id="@+id/cb_memasak"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/memasak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_memasak"
+        tools:layout_editor_absoluteX="109dp" />
+
+    <ImageView
+        android:id="@+id/img_menyanyi"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/menyanyi"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_diving"
+        app:srcCompat="@mipmap/minat_menyanyi" />
+
+    <CheckBox
+        android:id="@+id/cb_menyanyi"
+        android:layout_width="188dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:text="@string/menyanyi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_menyanyi" />
+
+    <ImageView
+        android:id="@+id/img_gitar"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/gitar"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_memasak"
+        app:srcCompat="@mipmap/minat_gitar" />
+
+    <CheckBox
+        android:id="@+id/cb_gitar"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/bermain_gitar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_gitar" />
+
+    <ImageView
+        android:id="@+id/img_piano"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/piano"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_menyanyi"
+        app:srcCompat="@mipmap/minat_piano" />
+
+    <CheckBox
+        android:id="@+id/cb_piano"
+        android:layout_width="189dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:text="@string/bermain_piano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_piano" />
+
+    <ImageView
+        android:id="@+id/img_basket"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/basket"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_gitar"
+        app:srcCompat="@mipmap/minat_basket" />
+
+    <CheckBox
+        android:id="@+id/cb_basket"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/bermain_basket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_basket" />
+
+    <ImageView
+        android:id="@+id/img_silat"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/silat"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_piano"
+        app:srcCompat="@mipmap/minat_silat" />
+
+    <CheckBox
+        android:id="@+id/cb_silat"
+        android:layout_width="184dp"
+        android:layout_height="26dp"
+        android:layout_centerVertical="true"
+        android:text="@string/pencak_silat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_silat" />
+
+    <ImageView
+        android:id="@+id/img_tendang"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/tendang"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_basket"
+        app:srcCompat="@mipmap/minat_tendang" />
+
+    <CheckBox
+        android:id="@+id/cb_tendang"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/bola_tendang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_tendang" />
+
+    <ImageView
+        android:id="@+id/img_memanah"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/memanah"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_silat"
+        app:srcCompat="@mipmap/minat_memanah" />
+
+    <CheckBox
+        android:id="@+id/cb_memanah"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:text="@string/memanah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_memanah" />
+
+    <ImageView
+        android:id="@+id/img_baseball"
+        android:layout_width="205dp"
+        android:layout_height="90dp"
+        android:contentDescription="@string/baseball"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_tendang"
+        app:srcCompat="@mipmap/minat_baseball" />
+
+    <CheckBox
+        android:id="@+id/cb_baseball"
+        android:layout_width="187dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/baseball"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_baseball" />
+
+    <ImageButton
+        android:id="@+id/btn_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_enter_arrow"
+        android:onClick="Enter"
+        android:contentDescription="@string/enter_arrow" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
