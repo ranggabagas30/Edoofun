@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".PhotosActivity"/>
+        <activity android:name=".KomunitasMancingActivity" />
+        <activity android:name=".GrupmancingActivity" />
+        <activity android:name=".GrupbersepedaActivity" />
+        <activity android:name=".AnnouncementActivity" />
+        <activity android:name=".KomunitasActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
