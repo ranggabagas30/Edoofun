@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00c3ff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PEMBAYARAN"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginLeft="15sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/caption"
+        android:textColor="#000"
+        android:layout_marginTop="100sp"
+        android:textSize="20sp"
+        android:layout_marginStart="18sp"
+        android:layout_below="@id/toolbar"
+        android:text="ATM (Automatic Teller Machine)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</RelativeLayout>

@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -20,11 +21,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HalamanHome extends AppCompatActivity {
-    TextView lihatsemua;
+    Button btnjalan;
 
     ViewPager viewPager;
+    ViewPager viewPager2;
     AdapterViewPager adapterViewPager;
+    AdapterViewPager adapterViewPager2;
     List<Model> models;
+
+    List<Model> models2;
     Integer[] colors = null;
     ArgbEvaluator argbEvaluator = new ArgbEvaluator();
 
@@ -35,8 +40,8 @@ public class HalamanHome extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         models = new ArrayList<>();
-        models.add(new Model(R.drawable.cardswipe1, "", ""));
-        models.add(new Model(R.drawable.cardswipe2, "BERENANG MEMPELAJARI DUNIA LAUT", ""));
+        models.add(new Model(R.drawable.cardswipe1, "MEMANCING DENGAN MUDAH DENGAN TALI YANG KUAT"));
+        models.add(new Model(R.drawable.cardswipe2, "BERENANG MEMPELAJARI DUNIA LAUT"));
 
         adapterViewPager = new AdapterViewPager(models, this);
 
@@ -44,7 +49,20 @@ public class HalamanHome extends AppCompatActivity {
         viewPager.setAdapter(adapterViewPager);
         viewPager.setPadding(0, 0, 0, 0);
 
-        Integer[] colors_temp = {
+        models2 = new ArrayList<>();
+        models2.add(new Model(R.drawable.trending3, "Cara bermain bola basket seperti pemain profesional"));
+        models2.add(new Model(R.drawable.trending2, "Cara berenang bisa tahan nafas dari ujung sampai ujung"));
+        models2.add(new Model(R.drawable.trending1, "Cara menjahit baju tanpa bolong"));
+
+
+        adapterViewPager2 = new AdapterViewPager(models2, this);
+
+        viewPager2= findViewById(R.id.viewpager2);
+        viewPager2.setAdapter(adapterViewPager2);
+        viewPager2.setPadding(0, 0, 0, 0);
+
+
+      /*  Integer[] colors_temp = {
                 getResources().getColor(R.color.color1)};
 
         colors = colors_temp;
@@ -76,7 +94,12 @@ public class HalamanHome extends AppCompatActivity {
             }
 
 
-        });
+        });*/
+
+
+
+
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.btn_nav);
 
@@ -95,6 +118,12 @@ public class HalamanHome extends AppCompatActivity {
                                 PembayaranKoin.class));
                         overridePendingTransition(0, 0);
                         return true;
+
+                    case R.id.sosial_menu:
+                        startActivity(new Intent(getApplicationContext(),
+                                sosial.class));
+                        overridePendingTransition(0, 0);
+                        return true;
                 }
                 return false;
 
@@ -104,15 +133,8 @@ public class HalamanHome extends AppCompatActivity {
 
 
 
-       lihatsemua = findViewById(R.id.titlelihatsemua);
-       lihatsemua.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(HalamanHome.this, KategoriDetail.class);
-                startActivity(i);
-            }
-        });
-        }
+
+    }
 
     }
 

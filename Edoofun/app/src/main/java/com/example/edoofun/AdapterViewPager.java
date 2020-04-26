@@ -1,6 +1,7 @@
 package com.example.edoofun;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,19 +41,19 @@ public class AdapterViewPager extends PagerAdapter {
        View view = layoutInflater.inflate(R.layout.item_swipeleft, container, false);
 
         ImageView imageView;
-        TextView title, desc;
+        TextView title;
 
         imageView = view.findViewById(R.id.image);
         title = view.findViewById(R.id.title);
-        desc = view.findViewById(R.id.desc);
+
 
         imageView.setImageResource(models.get(position).getImage());
         title.setText(models.get(position).getTitle());
-        desc.setText(models.get(position).getDesc());
+
 
         container.addView(view, 0);
+        return view;
 
-       return view;
     }
 
     @Override

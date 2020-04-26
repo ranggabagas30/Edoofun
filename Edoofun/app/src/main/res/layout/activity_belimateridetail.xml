@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".belimateridetail">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+
+      <ImageView
+        android:id="@+id/fotonyanyi"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:src="@drawable/detailnyanyi" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/ic_close"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="15sp" />
+
+    <LinearLayout
+        android:id="@+id/he"
+        android:layout_below="@id/fotonyanyi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:text="Menyanyi dengan head voice"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="300sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:layout_height="wrap_content"
+            android:background="#FFFF6600"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="Beli Sekarang"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/border"
+        android:layout_width="348dp"
+        android:layout_height="230dp"
+        android:layout_below="@id/he"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535"/>
+
+    <TextView
+        android:id="@+id/border1"
+        android:layout_width="348dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/border"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.535" />
+
+          <TextView
+              android:id="@+id/uh"
+              android:layout_width="310dp"
+              android:layout_height="35dp"
+              android:layout_below="@id/he"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="38dp"
+              android:layout_marginLeft="38dp"
+              android:layout_marginTop="13dp"
+              android:layout_marginEnd="34dp"
+              android:layout_marginRight="34dp"
+              android:gravity="center"
+              android:textStyle="bold"
+              android:textSize="20sp"
+              android:text="Kursus Ini Mencakup" />
+
+          <TextView
+              android:id="@+id/ih"
+              android:layout_width="260dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/uh"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="14dp"
+              android:layout_marginTop="10sp"
+              android:layout_marginLeft="14dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="120dp"
+              android:text="Video Memiliki Total durasi 1 jam"
+              android:textSize="15sp" />
+
+          <TextView
+              android:id="@+id/oh"
+              android:layout_width="260dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/ih"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="14dp"
+              android:layout_marginTop="10sp"
+              android:layout_marginLeft="14dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="120dp"
+              android:text="Diskusi dengan pembuat video"
+              android:textSize="15sp" />
+
+          <TextView
+              android:id="@+id/boh"
+              android:layout_width="260dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/oh"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="14dp"
+              android:layout_marginTop="10sp"
+              android:layout_marginLeft="14dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="120dp"
+              android:text="Materi Pembelajaran"
+              android:textSize="15sp" />
+
+          <TextView
+              android:id="@+id/bih"
+              android:layout_width="260dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/boh"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="14dp"
+              android:layout_marginTop="10sp"
+              android:layout_marginLeft="14dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="120dp"
+              android:text="Pembelajaran yang interaktif"
+              android:textSize="15sp" />
+
+          <TextView
+              android:id="@+id/beh"
+              android:layout_width="260dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/bih"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="14dp"
+              android:layout_marginTop="10sp"
+              android:layout_marginLeft="14dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="120dp"
+              android:text="Sertifikat penyelesaian"
+              android:textSize="15sp" />
+
+          <TextView
+              android:id="@+id/h"
+              android:layout_width="310dp"
+              android:layout_height="35dp"
+              android:layout_below="@+id/border"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="42dp"
+              android:layout_marginLeft="42dp"
+              android:layout_marginTop="18dp"
+              android:layout_marginEnd="42dp"
+              android:layout_marginRight="30dp"
+              android:gravity="center"
+              android:text="Apa yang dipelajari ?"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:id="@+id/oh1"
+              android:layout_width="260dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/h"
+              android:layout_alignStart="@+id/border"
+              android:layout_alignLeft="@+id/border"
+              android:layout_alignEnd="@+id/border"
+              android:layout_alignRight="@+id/border"
+              android:layout_marginStart="20dp"
+              android:layout_marginTop="10sp"
+              android:layout_marginLeft="14dp"
+              android:layout_marginEnd="10dp"
+              android:layout_marginRight="120dp"
+              android:text="Cara bernyanyi menggunakan teknik head voice"
+              android:textSize="15sp" />
+
+
+
+      </RelativeLayout>
+
+</ScrollView>
+
+
+
+</RelativeLayout>

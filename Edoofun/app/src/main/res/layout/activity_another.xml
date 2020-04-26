@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnotherActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00c3ff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/pembelian_koin"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginEnd="10sp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="140sp"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageVie"
+        android:layout_width="80sp"
+        android:layout_height="90sp"
+        android:layout_marginStart="5sp"
+        app:srcCompat="@drawable/ic_basket"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="0sp" />
+
+            <TextView
+                android:id="@+id/KOIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageVie"
+                android:singleLine="true"
+                android:text="KOIN"
+                android:layout_marginStart="20sp"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="0sp" />
+
+    <TextView
+        android:id="@+id/titlevie"
+        android:layout_marginStart="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageVie"
+        android:layout_below="@id/KOIN"
+        android:singleLine="true"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="2sp"
+        android:layout_marginLeft="10sp" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_marginStart="20sp"
+        android:layout_toRightOf="@id/imageVie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Description"
+        android:textSize="12sp"
+        android:layout_marginTop="5sp"
+        android:layout_below="@id/titlevie"
+        android:layout_marginLeft="10sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Top Up With :"
+        android:layout_below="@id/card"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="10sp"
+        android:textColor="#00c3ff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.  ATM (Automatic Teller Machine)"
+        android:textColor="#000"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="10sp"
+        android:textSize="17sp"/>
+
+
+</RelativeLayout>

@@ -19,7 +19,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     TextView forgetpass;
-    Button btnregister1,btnlogin;
+    Button btnregister1,btnlogin, btnjalan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,10 +51,14 @@ public class MainActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent c = new Intent(MainActivity.this, HalamanHome.class);
+                Intent c = new Intent(MainActivity.this, pilihan_minat.class);
                 startActivity(c);
             }
         });
+
+
+
+
 
     }
 }

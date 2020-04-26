@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountDownTimer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00c3ff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PEMBAYARAN"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="21sp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/Captatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="264dp"
+        android:gravity="center"
+        android:text="PROSES PEMBAYARAN"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/countdownview"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Captatas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="false"
+        app:isShowHour="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="true"
+        app:suffixGravity="center"
+        app:suffixHour=":"
+        app:suffixMinute=":"
+        app:suffixTextColor="#000"
+        app:suffixTextSize="20sp"
+        app:timeBgBorderRadius="3dp"
+        app:timeBgColor="#00c3ff"
+        app:timeBgDivisionLineSize="1dp"
+        app:timeBgSize="70dp"
+        app:timeTextColor="#FFF"
+        app:timeTextSize="40sp">
+
+    </cn.iwgang.countdownview.CountdownView>
+
+    <TextView
+        android:id="@+id/Capbawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="264dp"
+        android:gravity="center"
+        android:text="Tujuan Rekening : 2364 56748 463 3 \nAtas nama EDOOFUN"
+        android:textColor="#000"
+        android:layout_below="@+id/countdownview"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Capbawahlagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10sp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginRight="264dp"
+        android:gravity="center"
+        android:text="Upload Bukti Transfer"
+        android:textColor="#000"
+        android:layout_below="@+id/Capbawah"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/Capbawahlagi">
+
+
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_gravity="center"
+            android:layout_width="150sp"
+            android:layout_marginTop="5sp"
+            android:layout_height="wrap_content"
+            android:shadowColor="#00c3ff"
+            android:background="@color/color2"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="Choose"/>
+
+
+        <Button
+            android:id="@+id/next"
+            android:layout_gravity="center"
+            android:layout_marginStart="10sp"
+            android:layout_width="150sp"
+            android:layout_marginTop="5sp"
+            android:layout_height="wrap_content"
+            android:shadowColor="#00c3ff"
+            android:background="@color/color2"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="Upload"
+            android:layout_marginLeft="5sp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

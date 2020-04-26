@@ -62,6 +62,8 @@
     <string name="title_notifikasi">NOTIFIKASI</string>
     <string name="title_akun">AKUN</string>
     <string name="logo">logo</string>
+    <string name="pembelian_koin">PEMBELIAN KOIN</string>
+    <string name="atm_internet_banking"><![CDATA[ATM & Internet Banking]]></string>
 
 
 </resources>

@@ -46,8 +46,8 @@
 
             <ImageView
                 android:id="@+id/ic_koin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
                 android:src="@drawable/koin"
                 android:padding="10sp"
                 android:layout_marginTop="5sp"
@@ -59,8 +59,8 @@
                 android:text="000-"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textSize="28sp"
-                android:layout_marginTop="11sp"
+                android:textSize="20sp"
+                android:layout_marginTop="16sp"
                 android:layout_marginEnd="5sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginEnd="2sp"
+            android:layout_marginEnd="5sp"
             android:orientation="horizontal"
             android:layout_marginRight="2sp">
 
@@ -111,7 +111,7 @@
                 android:layout_marginLeft="6sp"
                 android:gravity="center"
                 android:text="Riwayat Pembelian"
-                android:textSize="17sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
 
 
@@ -169,6 +169,7 @@
                 android:background="@drawable/custom_button"
                 android:gravity="center"
                 android:text="Beli"
+                android:clickable="true"
                 android:textColor="@android:color/holo_orange_dark"
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -237,6 +238,7 @@
         android:id="@+id/btn_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemBackground="@color/color2"
         android:layout_alignParentBottom="true"
         app:menu="@menu/main_menu" />
 

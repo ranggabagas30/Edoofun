@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imagemateri"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="5sp"
+            app:srcCompat="@drawable/ic_basket"/>
+
+        <TextView
+            android:id="@+id/judulmateri"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3sp"
+            android:layout_toRightOf="@+id/imagemateri"
+            android:singleLine="true"
+            android:text="Menyanyi menggunakan head voice"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imagemateri"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="3sp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:text="Sarah Semewiring"
+            android:layout_below="@id/judulmateri"
+            android:textSize="12sp"
+            android:layout_marginLeft="0sp" />
+
+        <TextView
+            android:id="@+id/subdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imagemateri"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="3sp"
+            android:singleLine="true"
+            android:text="50 KOIN"
+            android:layout_below="@id/desc"
+            android:textSize="18sp"
+            android:textColor="#FFFF6600"
+            android:layout_marginLeft="0sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
