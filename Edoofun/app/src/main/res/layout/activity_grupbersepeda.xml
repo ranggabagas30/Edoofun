@@ -6,22 +6,38 @@
     android:orientation="vertical"
     android:visibility="visible">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#40BDDC"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#40BDDC"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/back"/>
+
+    </RelativeLayout>
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/ivBaner"
         android:layout_width="match_parent"
         android:layout_height="152dp"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/sepeda" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/tvJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30dp"

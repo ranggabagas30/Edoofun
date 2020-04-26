@@ -124,7 +124,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/ivLeave"
                 android:layout_width="87dp"
                 android:layout_height="78dp"
                 app:srcCompat="@drawable/leave" />
@@ -146,7 +146,7 @@
                 android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/ivShare"
                 android:layout_width="99dp"
                 android:layout_height="84dp"
                 app:srcCompat="@drawable/share" />
