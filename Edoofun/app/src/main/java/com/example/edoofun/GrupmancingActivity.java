@@ -67,6 +67,8 @@ public class GrupmancingActivity extends AppCompatActivity {
 
     private void KomunitasMancingActivity() {
         Intent intent = new Intent(this, KomunitasMancingActivity.class);
+        intent.putExtra("judul", "Komunitas Memancing");
+        intent.putExtra("image", R.mipmap.minat_memancing_foreground);
         startActivity(intent);
     }
 

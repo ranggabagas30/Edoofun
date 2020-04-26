@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class KomunitasMancingActivity extends AppCompatActivity {
 
@@ -31,6 +32,14 @@ public class KomunitasMancingActivity extends AppCompatActivity {
                 dialogShareGrup();
             }
         });
+
+        ImageView ivBaner = findViewById(R.id.ivBaner);
+        TextView tvJudul = findViewById(R.id.tvJudul);
+
+        int image = getIntent().getIntExtra("image", 0);
+
+        ivBaner.setImageResource(image);
+        tvJudul.setText(getIntent().getStringExtra("judul"));
     }
     private void dialogLeaveGrup() {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);

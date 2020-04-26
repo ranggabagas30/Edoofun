@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class KomunitasMenyanyiActivity extends AppCompatActivity {
 
@@ -40,6 +41,15 @@ public class KomunitasMenyanyiActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        ImageView ivMore = findViewById(R.id.ivMore);
+        ivMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                KomunitasMancingActivity();
+            }
+        });
+
     }
 
     public void toAnnouncement() {
@@ -50,6 +60,13 @@ public class KomunitasMenyanyiActivity extends AppCompatActivity {
     }
     public void toPhotos() {
         Intent intent = new Intent(this, PhotosActivity.class);
+        startActivity(intent);
+    }
+
+    private void KomunitasMancingActivity() {
+        Intent intent = new Intent(this, KomunitasMancingActivity.class);
+        intent.putExtra("judul", "Komunitas Menyanyi");
+        intent.putExtra("image", R.mipmap.minat_menyanyi_foreground);
         startActivity(intent);
     }
 }
