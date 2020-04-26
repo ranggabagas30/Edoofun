@@ -6,6 +6,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
@@ -33,6 +34,14 @@ public class HalamanHome extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView imageKomunitas = (ImageView) findViewById(R.id.ivKomunitas);
+        imageKomunitas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toKomunitas();
+            }
+        });
 
         models = new ArrayList<>();
         models.add(new Model(R.drawable.cardswipe1, "", ""));
@@ -113,6 +122,11 @@ public class HalamanHome extends AppCompatActivity {
             }
         });
         }
+
+    private void toKomunitas() {
+        Intent intent = new Intent(this, KomunitasActivity.class);
+        startActivity(intent);
+    }
 
     }
 

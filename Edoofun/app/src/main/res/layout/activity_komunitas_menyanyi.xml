@@ -12,13 +12,15 @@
         android:layout_height="wrap_content">
 
 
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#40BDDC"
             android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme" />
+            android:theme="?attr/actionBarTheme"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/ivBack"
@@ -28,18 +30,7 @@
             android:layout_marginLeft="10dp"
             app:srcCompat="@drawable/back"/>
 
-        <ImageView
-            android:id="@+id/ivMore"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/ic_more_vertical"
-            android:layout_marginRight="10dp" />
-
-
     </RelativeLayout>
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -54,13 +45,13 @@
                 android:id="@+id/imageView11"
                 android:layout_width="match_parent"
                 android:layout_height="147dp"
-                app:srcCompat="@drawable/mancing" />
+                app:srcCompat="@drawable/nyanyi" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Komunitas Memancing"
+                android:text="Komunitas Menyanyi"
                 android:layout_gravity="center"
                 android:textSize="30sp"/>
 
@@ -71,13 +62,13 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnAnnouncement"
+                    android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Announcement" />
 
                 <Button
-                    android:id="@+id/btnPhotos"
+                    android:id="@+id/button5"
                     android:layout_width="141dp"
                     android:layout_height="wrap_content"
                     android:text="Photos"
@@ -200,56 +191,13 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView18"
-                    android:layout_width="134dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    app:srcCompat="@drawable/orangpink" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tvNama"
-                        android:layout_width="215dp"
-                        android:layout_height="wrap_content"
-                        android:text="Sabeni Angga"
-                        android:textSize="30sp"
-                        android:layout_marginTop="10dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView19"
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/star" />
-
-                        <TextView
-                            android:id="@+id/textView14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="1dp"
-                            android:text="Admin"
-                            android:textSize="24sp"
-                            android:layout_marginTop="10dp" />
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
+                app:srcCompat="@drawable/orangpink"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
 
 
         </LinearLayout>

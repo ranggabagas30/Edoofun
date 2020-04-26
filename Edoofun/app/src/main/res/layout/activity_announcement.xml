@@ -7,13 +7,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar5"
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#40BDDC"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Announcement"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:gravity="center_horizontal" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/back"/>
+
+</RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,7 +58,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tvNama"
                 android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:text="Sabeni Angga"
@@ -67,7 +92,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/tvJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RULES Komunitas Mancing"
