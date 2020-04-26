@@ -71,6 +71,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="12dp"
+        android:onClick="LaunchMinat"
         app:layout_constraintStart_toEndOf="@+id/btn_camera"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:srcCompat="@drawable/ic_search" />

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "820299046303",
+    "firebase_url": "https://edoofun.firebaseio.com",
+    "project_id": "edoofun",
+    "storage_bucket": "edoofun.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820299046303:android:b19af5d031264a30b331aa",
+        "android_client_info": {
+          "package_name": "com.example.edoofun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820299046303-ecvsmt2fnhi5erlsm2kk6548godjdncv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.edoofun",
+            "certificate_hash": "00c5bb8b30720e0a24e427aaf5162ed4c0258530"
+          }
+        },
+        {
+          "client_id": "820299046303-db3mrmqd4951m7stg348h310rlu0p5q0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmJddB_e7tqoaHEF5us7T0S9T7IzDW5XQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820299046303-db3mrmqd4951m7stg348h310rlu0p5q0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

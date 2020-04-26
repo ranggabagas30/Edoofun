@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarKomunitas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40BDDC"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Memancing"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/ivMemancing"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_memancing_foreground" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Bersepeda"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivBersepeda"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_bersepeda_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Menyanyi"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivMenyanyi"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_menyanyi_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Gitar Lovers"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivGitar"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_gitar_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Menjahit"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivMenjahit"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_menjahit_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Diving"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivDiving"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_diving_foreground" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Komunitas Memasak"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/ivMemasak"
+                android:layout_width="match_parent"
+                android:layout_height="152dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@mipmap/minat_memasak_foreground" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

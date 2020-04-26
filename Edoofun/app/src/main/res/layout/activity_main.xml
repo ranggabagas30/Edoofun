@@ -29,7 +29,20 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ic_dehaze"/>
 
+
     </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/ivKomunitas"
+                android:layout_width="75dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_community" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Community" />
 
     <ScrollView
         android:layout_width="match_parent"

@@ -1,12 +1,10 @@
 package com.example.edoofun;
 
+
 import android.content.Intent;
-
 import androidx.test.rule.ActivityTestRule;
-
 import org.junit.Rule;
 import org.junit.Test;
-
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
@@ -20,9 +18,8 @@ public class MainActivityTest {
     public ActivityTestRule<ListBeliMateri> mActivity = new ActivityTestRule<>(ListBeliMateri.class);
 
     @Test
-    public void testtopup(){
+    public void testtopup() {
         onView(withId(R.id.back)).perform(click());
+
     }
-
-
 }
