@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.DaftarEventActivity"
+    android:background="@drawable/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGreen"
+        app:title="Daftar"
+        app:titleTextColor="@android:color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titlePendaftaranEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="Lomba Mewarnai dan Basket"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textAllCaps="true"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/namaLengkapInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:hint="Nama Lengkap"
+                android:minLines="1"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@android:color/white"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/noTelpInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:hint="No. Telp"
+                android:inputType="phone"
+                android:background="@android:color/white"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/asalSekolahInputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="10dp"
+                android:hint="Asal Sekolah"
+                android:minLines="1"
+                android:maxLines="1"
+                android:inputType="text"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/fotoLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Foto : * Format jpg/png"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBrowseFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_button"
+                android:text="Browse file"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Pilih Kategori: "
+                android:textStyle="bold"/>
+
+            <RadioGroup
+                android:id="@+id/rgLomba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <RadioButton
+                    android:id="@+id/rbMewarnai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mewarnai" />
+
+                <RadioButton
+                    android:id="@+id/rbBasket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basket"/>
+            </RadioGroup>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Bayar"
+                android:background="@drawable/bg_button_selectable"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
