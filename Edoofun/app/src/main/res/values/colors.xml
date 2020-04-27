@@ -9,4 +9,11 @@
     //colorforbutton
     <color name="buttonClicked">#FF808080</color>
     <color name="buttonFocused">#FF808080</color>
+
+    <!-- nirwana -->
+    <color name="colorError">#D82323</color>
+    <color name="colorOrangeButton">#F0A338</color>
+    <color name="colorLightGreen">#1CAEA0</color>
+    <color name="colorDarkGreen">#157A71</color>
+    <color name="colorBlue">#2196F3</color>
 </resources>

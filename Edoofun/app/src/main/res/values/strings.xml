@@ -65,5 +65,19 @@
     <string name="pembelian_koin">PEMBELIAN KOIN</string>
     <string name="atm_internet_banking"><![CDATA[ATM & Internet Banking]]></string>
 
+    <!-- nirwana -->
+    <string name="forget_password_instruction_text">Masukan e-mail yang terkait dengan akun
+anda dan kami akan mengirimi anda
+tautan untuk mereset kata sandi</string>
+    <string name="forget_password_error_text_email_is_required">E-mail is required</string>
+    <string name="forget_password_error_text_email_not_found">E-mail tidak ditemukan</string>
+    <string name="title_lomba_mewarnai">Lomba Mewarnai</string>
+    <string name="deskripsi_lomba_mewarnai">Di hari pendidikan ini, kami menghadirkan lomba mewarnai tingkat TK dan SD.</string>
+    <string name="date_lomba_mewarnai">Minggu, 12 Maret 2017</string>
+    <string name="fee_lomba_mewarnai">20.000</string>
 
+    <string name="title_lomba_basketball">Lomba basketball</string>
+    <string name="deskripsi_lomba_basketball">Baketball camp come back!! daftarkan dirimu jangan sampai terlewatkan</string>
+    <string name="date_lomba_basketball">Minggu, 12 Maret 2017</string>
+    <string name="fee_lomba_basketball">250.000</string>
 </resources>
