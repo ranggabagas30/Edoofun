@@ -9,13 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RiwayatPembelian"></activity>
+        <activity android:name=".view.ViewDetailActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".view.DaftarEventActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.EventListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RiwayatPembelian" />
         <activity android:name=".belimateridetail" />
         <activity android:name=".Pembelianmateri" />
         <activity android:name=".CountDownTimer" />
         <activity android:name=".tutorialpembayaran" />
-        <activity android:name=".materi_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".materi_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".KomunitasMenyanyiActivity" />
         <activity android:name=".PhotosActivity" />
         <activity android:name=".KomunitasMancingActivity" />
@@ -35,10 +41,9 @@
             android:parentActivityName=".ListBeliKoin" />
         <activity android:name=".ListBeliKoin" />
         <activity android:name=".PembayaranATM" />
-
-          <activity  android:name=".pilihan_minat"
+        <activity
+            android:name=".pilihan_minat"
             android:label="@string/app_name" />
-
         <activity
             android:name=".sosial"
             android:label="@string/app_name" />
@@ -57,12 +62,10 @@
         <activity
             android:name=".postingan_detail"
             android:label="@string/app_name" />
-        <activity android:name=".ForgotPass" />
+        <activity android:name=".ForgotPassActivity" />
         <activity android:name=".Register" />
-
         <activity android:name=".ListBeliMateri" />
         <activity android:name=".PembayaranKoin" />
-
         <activity android:name=".HalamanHome" />
     </application>
 
