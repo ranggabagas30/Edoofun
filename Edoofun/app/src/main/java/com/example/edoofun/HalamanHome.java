@@ -4,30 +4,36 @@ import android.animation.ArgbEvaluator;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.edoofun.view.EventListActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class HalamanHome extends AppCompatActivity {
+    FirebaseAuth auth;
     Button btnjalan;
-
+    Toolbar toolbar;
     ViewPager viewPager;
     ViewPager viewPager2;
     AdapterViewPager adapterViewPager;
     AdapterViewPager adapterViewPager2;
+    LinearLayout eventItemLayout;
     List<Model> models;
 
     List<Model> models2;
@@ -40,13 +46,21 @@ public class HalamanHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageView imageKomunitas = (ImageView) findViewById(R.id.ivKomunitas);
-        imageKomunitas.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toKomunitas();
-            }
+        auth = FirebaseAuth.getInstance();
+
+        toolbar = findViewById(R.id.toolbar);
+        eventItemLayout = findViewById(R.id.eventItemLayout);
+
+        toolbar.inflateMenu(R.menu.toolbar_main_menu);
+        setSupportActionBar(toolbar);
+
+        eventItemLayout.setOnClickListener(v -> {
+            Intent intent = new Intent(HalamanHome.this, EventListActivity.class);
+            startActivity(intent);
         });
+
+        ImageView imageKomunitas = (ImageView) findViewById(R.id.ivKomunitas);
+        imageKomunitas.setOnClickListener(v -> toKomunitas());
 
         models = new ArrayList<>();
         models.add(new Model(R.drawable.cardswipe1, "MEMANCING DENGAN MUDAH DENGAN TALI YANG KUAT"));
@@ -150,6 +164,35 @@ public class HalamanHome extends AppCompatActivity {
         startActivity(intent);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        this.getMenuInflater().inflate(R.menu.toolbar_main_menu, menu);
+        return true;
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int menuId = item.getItemId();
+        switch (menuId) {
+            case R.id.logout_menu : {
+                if (auth != null) {
+                    doLogout();
+                    navigateToLogin();
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private void doLogout() {
+        auth.signOut();
+    }
+
+    private void navigateToLogin() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+}
 
 
